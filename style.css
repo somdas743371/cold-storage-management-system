@@ -1,0 +1,112 @@
+body{
+    
+font-family: Arial;
+background:#c0c0e2;
+background-image:url(coldstorage.jpg) ;
+
+text-align:center;
+}
+
+h1{
+background:#68b1b1;
+color:rgb(234, 188, 188);
+padding:15px;
+}
+
+input,select{
+display:block;
+margin:10px auto;
+padding:8px;
+width:200px;
+}
+
+button{
+padding:10px 20px;
+background:#2c7a7b;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+button:hover{
+background:#225e5f;
+transform:scale(1.1);
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
+}
+
+.hidden{
+display:none;
+}
+
+#dashboard{
+margin-top:20px;
+}
+.h2{
+    top:50%;
+    right: 20%;
+
+}
+
+/*.card{
+position:absolute;
+right:8%;
+top:50%;
+transform:translateY(-50%);
+background:rgba(255,255,255,0.95);
+width:360px;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}*/
+
+.card{
+position:absolute;
+
+right:8%;
+top:50%;
+transform:translateY(-50%);
+background: rgba(255,255,255,0.2);
+backdrop-filter: blur(0px);
+width:auto;
+padding:30px;
+border: radius 30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+color:rgb(106, 160, 231);
+}
+.card:hover{
+    transform: translateY(-50%) scale(1.05);
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+
+}
+
+.main-title{
+font-size:42px;
+font-weight:bold;
+text-align:center;
+margin-top:20px;
+
+color:white;
+letter-spacing:3px;
+
+/* gradient text effect */
+background: linear-gradient(90deg,#00d2ff,#3a7bd5);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+/* shadow for better visibility */
+text-shadow:3px 3px 10px rgba(0,0,0,0.5);
+
+/* animation */
+animation: glow 3s infinite alternate;
+}
+
+/* glowing animation */
+@keyframes glow{
+from{
+text-shadow:0 0 10px #00d2ff;
+}
+to{
+text-shadow:0 0 25px #3a7bd5;
+}
+}

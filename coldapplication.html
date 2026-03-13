@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cold Storage Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+
+<h1 class="main-title">Cold Storage Online Application</h1>
+
+<div id="auth"class="card">
+
+<h2>Register</h2>
+
+<input type="text" id="regUser" placeholder="Username">
+<input type="password" id="regPass" placeholder="Password">
+<button onclick="register()">Register</button>
+
+<h2>Login</h2>
+<input type="text" id="loginUser" placeholder="Username">
+<input type="password" id="loginPass" placeholder="Password">
+<button onclick="login()">Login</button>
+
+</div>
+
+
+<div id="dashboard" class="hidden">
+
+<h2>Dashboard</h2>
+
+<button onclick="checkStorage()">View Available Storage</button>
+
+<div id="storageSection" class="hidden">
+
+<h3>Book Storage</h3>
+
+<input type="text" id="product" placeholder="Product Name">
+<label>Select Region</label>
+
+<select id="region">
+<option value="">Select Region</option>
+<option value="Asansol">Asansol</option>
+<option value="Kolkata">Kolkata</option>
+<option value="Durgapur">Durgapur</option>
+<option value="Bardhaman">Bardhaman</option>
+</select>
+
+<select id="unit">
+<option value="100">Small Unit</option>
+<option value="200">Medium Unit</option>
+<option value="300">Large Unit</option>
+</select>
+
+<input type="number" id="days" placeholder="Storage Days">
+
+<button onclick="calculateCost()">Calculate Cost</button>
+
+<p id="cost"></p>
+
+<button onclick="confirmBooking()">Confirm Booking</button>
+
+</div>
+
+<div id="receipt"></div>
+
+<button onclick="logout()">Logout</button>
+
+</div>
+
+<script src="new.js"></script>
+
+</body>
+</html>
